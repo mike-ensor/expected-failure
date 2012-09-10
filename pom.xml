@@ -5,7 +5,8 @@
     <artifactId>expected-failure</artifactId>
     <version>0.01-SNAPSHOT</version>
     <name>${project.artifactId}</name>
-    <url>http://www.ensor.cc/???</url>
+    <description>see: http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</description>
+    <url>http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</url>
 
     <organization>
         <name>Click Concepts</name>
