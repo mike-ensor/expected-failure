@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.clickconcepts.junit</groupId>
+    <artifactId>expected-failure</artifactId>
+    <version>0.01-SNAPSHOT</version>
+    <name>${project.artifactId}</name>
+    <url>http://www.ensor.cc/???</url>
+
+    <organization>
+        <name>Click Concepts</name>
+        <url>http://www.clickconcepts.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>Mike!</id>
+            <name>Mike Ensor</name>
+            <email>mike@clickconcepts.com</email>
+            <organization>Click Concepts</organization>
+            <organizationUrl>http://www.ensor.cc</organizationUrl>
+            <roles>
+                <role>Principal Architect</role>
+            </roles>
+            <timezone>-7</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+        <!-- Project specific -->
+        <build.timestamp>${maven.build.timestamp}</build.timestamp>
+        <maven.build.timestamp.format>dd-MMM-yyyy hh:mm a</maven.build.timestamp.format>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 1.7 is not required, code works with 1.6 -->
+        <project.jdk.version>1.7</project.jdk.version>
+
+        <!-- dependencies -->
+        <guava.version>13.0.1</guava.version>
+        <junit.version>4.10</junit.version>
+        <mockito.version>1.9.0</mockito.version>
+    </properties>
+
+    <distributionManagement>
+        <!--<repository>-->
+        <!--<id>central</id>-->
+        <!--<name>YOUR INTERNAL REPOSITORY</name>-->
+        <!--<url>${project.artifactory.server}/artifactory/libs-releases-local</url>-->
+        <!--</repository>-->
+        <!--<site>-->
+        <!--<id>doc-site</id>-->
+        <!--<url>scp://${documentation.server.name}/var/apache2/htdocs/site-docs/${project.artifactId}</url>-->
+        <!--</site>-->
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:svn:https://SVN-REPOSITORY/svn/${project.artifactId}/trunk</connection>
+        <developerConnection>scm:svn:https://SVN-REPOSITORY/svn/${project.artifactId}/trunk</developerConnection>
+        <url>https://SVN-REPOSITORY/svn/${project.artifactId}/</url>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>http://www.github.com/mike-ensor/</url>
+    </issueManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>${project.jdk.version}</source>
+                    <target>${project.jdk.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+            <version>${junit.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hamcrest</groupId>
+                    <artifactId>hamcrest-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- Test Specific -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
