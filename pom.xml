@@ -44,7 +44,7 @@
     <distributionManagement>
         <!--<repository>-->
         <!--<id>central</id>-->
-        <!--<name>YOUR INTERNAL REPOSITORY</name>-->
+        <!--<name>TBD</name>-->
         <!--<url>${project.artifactory.server}/artifactory/libs-releases-local</url>-->
         <!--</repository>-->
         <!--<site>-->
@@ -54,14 +54,14 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:svn:https://SVN-REPOSITORY/svn/${project.artifactId}/trunk</connection>
-        <developerConnection>scm:svn:https://SVN-REPOSITORY/svn/${project.artifactId}/trunk</developerConnection>
-        <url>https://SVN-REPOSITORY/svn/${project.artifactId}/</url>
+        <connection>scm:git:git@github.com:mike-ensor/expected-failure.git</connection>
+        <developerConnection>scm:git:git@github.com:mike-ensor/expected-failure.git</developerConnection>
+        <url>http://github.com/mike-ensor/expected-failure/</url>
     </scm>
 
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>http://www.github.com/mike-ensor/</url>
+        <url>http://www.github.com/mike-ensor/expected-failure/issues</url>
     </issueManagement>
 
     <build>
