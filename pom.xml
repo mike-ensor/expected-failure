@@ -52,7 +52,7 @@
 
     <distributionManagement>
         <repository>
-            <id>sonatype</id>
+            <id>sonatype-nexus-staging</id>
             <name>Sonatype</name>
             <url>http://repository.sonatype.org/content/groups/public/</url>
         </repository>
