@@ -140,7 +140,7 @@
                                     <goal>sign</goal>
                                 </goals>
                                 <configuration>
-                                    <passphrase />
+                                    <passphrase>D2502B03</passphrase>
                                 </configuration>
                             </execution>
                         </executions>
