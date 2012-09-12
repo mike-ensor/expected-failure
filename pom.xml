@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.clickconcepts.junit</groupId>
     <artifactId>expected-failure</artifactId>
-    <version>0.03-SNAPSHOT</version>
+    <version>0.01-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <description>see: http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</description>
     <url>http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</url>
@@ -51,11 +51,11 @@
     </licenses>
 
     <distributionManagement>
-        <!--<repository>-->
-        <!--<id>central</id>-->
-        <!--<name>TBD</name>-->
-        <!--<url>${project.artifactory.server}/artifactory/libs-releases-local</url>-->
-        <!--</repository>-->
+        <repository>
+            <id>sonatype</id>
+            <name>Sonatype</name>
+            <url>http://repository.sonatype.org/content/groups/public/</url>
+        </repository>
         <!--<site>-->
         <!--<id>doc-site</id>-->
         <!--<url>scp://${documentation.server.name}/var/apache2/htdocs/site-docs/${project.artifactId}</url>-->
