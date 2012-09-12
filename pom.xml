@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.clickconcepts.junit</groupId>
     <artifactId>expected-failure</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>${project.artifactId}</name>
     <description>see: http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</description>
     <url>http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</url>
