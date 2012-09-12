@@ -13,7 +13,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ExpectedTestFailureTestWatcher {
+public class ExpectedTestFailureTestWatcherTest {
 
     private ExpectedTestFailureWatcher rule = ExpectedTestFailureWatcher.instance();
     @Mock
