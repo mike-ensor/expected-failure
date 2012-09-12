@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd"
+         name="${project.artifactId}">
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.1</version>
+    </skin>
+    <!--<poweredBy>-->
+        <!--&lt;!&ndash;<logo name="Mike Ensor" href="http://www.ensor.cc"&ndash;&gt;-->
+              <!--&lt;!&ndash;img="http://1.bp.blogspot.com/-4T8nuoG7KrQ/Tjjiu1RjDgI/AAAAAAAAAdc/P6ZCaCrElPw/s220-h/headshot-sunset.jpg"/>&ndash;&gt;-->
+    <!--</poweredBy>-->
+    <publishDate format="dd MMM yyyy"/>
+    <version position="right"/>
+    <body>
+        <links>
+            <item name="Mike's Blog" href="http://www.ensor.cc/"/>
+        </links>
+        <menu name="Reactor">
+            <item name="Parent" href="/"/>
+        </menu>
+        <menu name="Modules" ref="modules"/>
+        <menu name="Reports" ref="reports"/>
+    </body>
+</project>
