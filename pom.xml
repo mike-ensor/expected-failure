@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.clickconcepts.junit</groupId>
     <artifactId>expected-failure</artifactId>
-    <version>0.01-SNAPSHOT</version>
+    <version>0.01</version>
     <name>${project.artifactId}</name>
     <description>see: http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</description>
     <url>http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</url>
@@ -41,6 +41,14 @@
         <junit.version>4.10</junit.version>
         <mockito.version>1.9.0</mockito.version>
     </properties>
+
+    <licenses>
+        <license>
+            <name>Creative Commons By, Version 3.0</name>
+            <url>http://creativecommons.org/licenses/by/3.0/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <distributionManagement>
         <!--<repository>-->
