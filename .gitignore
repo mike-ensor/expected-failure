@@ -8,3 +8,4 @@ WEB-INF
 .idea
 .gradle
 build
+release.sh
