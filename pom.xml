@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.clickconcepts.junit</groupId>
     <artifactId>expected-failure</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <description>Allows a know failing test case to succeed based on an annotation @ExpectedFailure. See the blog post at &lt;a href="${project.url}"&gt;${project.url}&lt;/a&gt;</description>
     <url>http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</url>
