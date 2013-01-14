@@ -5,7 +5,7 @@
     <artifactId>expected-failure</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>${project.artifactId}</name>
-    <description>Allows a know failing test case to succeed based on an annotation @ExpectedFailure.  See the blog post at &lt;a href="${project.url}"&gt;${project.url}&lt;/a&gt;</description>
+    <description>Allows a know failing test case to succeed based on an annotation @ExpectedFailure. See the blog post at &lt;a href="${project.url}"&gt;${project.url}&lt;/a&gt;</description>
     <url>http://www.ensor.cc/2012/09/allowing-junit-tests-to-pass-test-case.html</url>
 
     <organization>
@@ -587,28 +587,6 @@
             </activation>
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-enforcer-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>enforce-property</id>
-                                <phase>generate-sources</phase>
-                                <goals>
-                                    <goal>enforce</goal>
-                                </goals>
-                                <configuration>
-                                    <rules>
-                                        <requireProperty>
-                                            <property>gpg.passcode</property>
-                                            <message>Passcode must be set to sign and release</message>
-                                        </requireProperty>
-                                    </rules>
-                                    <fail>true</fail>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
